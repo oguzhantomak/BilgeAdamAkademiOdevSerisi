@@ -36,7 +36,7 @@
             this.txt5 = new System.Windows.Forms.TextBox();
             this.txt6 = new System.Windows.Forms.TextBox();
             this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.tmrBaslat = new System.Windows.Forms.Timer(this.components);
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // txt1
@@ -115,11 +115,11 @@
             this.metroTile1.Text = "ÇEKİLİŞ YAP";
             this.metroTile1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.metroTile1.UseSelectable = true;
-            this.metroTile1.Click += new System.EventHandler(this.MetroTile1_Click);
+            this.metroTile1.Click += new System.EventHandler(this.metroTile1_Click);
             // 
-            // tmrBaslat
+            // timer1
             // 
-            this.tmrBaslat.Tick += new System.EventHandler(this.TmrBaslat_Tick);
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // SayisalLotoCekilis
             // 
@@ -134,6 +134,7 @@
             this.Controls.Add(this.txt2);
             this.Controls.Add(this.txt1);
             this.Name = "SayisalLotoCekilis";
+            this.Load += new System.EventHandler(this.SayisalLotoCekilis_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -148,7 +149,7 @@
         private System.Windows.Forms.TextBox txt5;
         private System.Windows.Forms.TextBox txt6;
         private MetroFramework.Controls.MetroTile metroTile1;
-        private System.Windows.Forms.Timer tmrBaslat;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
