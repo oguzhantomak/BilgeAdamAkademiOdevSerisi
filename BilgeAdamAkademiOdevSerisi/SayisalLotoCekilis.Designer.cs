@@ -48,7 +48,8 @@
             this.txt1.Name = "txt1";
             this.txt1.Size = new System.Drawing.Size(87, 88);
             this.txt1.TabIndex = 0;
-            this.txt1.Text = "49";
+            this.txt1.Text = "0";
+            this.txt1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt2
             // 
@@ -59,7 +60,8 @@
             this.txt2.Name = "txt2";
             this.txt2.Size = new System.Drawing.Size(87, 88);
             this.txt2.TabIndex = 0;
-            this.txt2.Text = "49";
+            this.txt2.Text = "0";
+            this.txt2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt3
             // 
@@ -70,7 +72,8 @@
             this.txt3.Name = "txt3";
             this.txt3.Size = new System.Drawing.Size(87, 88);
             this.txt3.TabIndex = 0;
-            this.txt3.Text = "49";
+            this.txt3.Text = "0";
+            this.txt3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt4
             // 
@@ -81,7 +84,8 @@
             this.txt4.Name = "txt4";
             this.txt4.Size = new System.Drawing.Size(87, 88);
             this.txt4.TabIndex = 0;
-            this.txt4.Text = "49";
+            this.txt4.Text = "0";
+            this.txt4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt5
             // 
@@ -92,7 +96,8 @@
             this.txt5.Name = "txt5";
             this.txt5.Size = new System.Drawing.Size(87, 88);
             this.txt5.TabIndex = 0;
-            this.txt5.Text = "49";
+            this.txt5.Text = "0";
+            this.txt5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // txt6
             // 
@@ -103,7 +108,8 @@
             this.txt6.Name = "txt6";
             this.txt6.Size = new System.Drawing.Size(87, 88);
             this.txt6.TabIndex = 0;
-            this.txt6.Text = "49";
+            this.txt6.Text = "0";
+            this.txt6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // metroTile1
             // 

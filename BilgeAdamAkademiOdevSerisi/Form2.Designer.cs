@@ -38,12 +38,12 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
-            this.metroTile2 = new MetroFramework.Controls.MetroTile();
-            this.metroTile3 = new MetroFramework.Controls.MetroTile();
             this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.metroTile3 = new MetroFramework.Controls.MetroTile();
+            this.metroTile2 = new MetroFramework.Controls.MetroTile();
+            this.btnSiparisAl = new MetroFramework.Controls.MetroTile();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -88,7 +88,7 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(24, 199);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(245, 169);
+            this.pictureBox1.Size = new System.Drawing.Size(245, 237);
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
             // 
@@ -131,48 +131,9 @@
             // 
             this.pictureBox2.Location = new System.Drawing.Point(275, 199);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(245, 169);
+            this.pictureBox2.Size = new System.Drawing.Size(245, 237);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
-            // 
-            // metroTile1
-            // 
-            this.metroTile1.ActiveControl = null;
-            this.metroTile1.BackColor = System.Drawing.Color.Yellow;
-            this.metroTile1.Location = new System.Drawing.Point(526, 199);
-            this.metroTile1.Name = "metroTile1";
-            this.metroTile1.Size = new System.Drawing.Size(102, 169);
-            this.metroTile1.TabIndex = 6;
-            this.metroTile1.Text = "Sipariş Al";
-            this.metroTile1.UseCustomBackColor = true;
-            this.metroTile1.UseCustomForeColor = true;
-            this.metroTile1.UseSelectable = true;
-            // 
-            // metroTile2
-            // 
-            this.metroTile2.ActiveControl = null;
-            this.metroTile2.BackColor = System.Drawing.Color.Green;
-            this.metroTile2.Location = new System.Drawing.Point(634, 199);
-            this.metroTile2.Name = "metroTile2";
-            this.metroTile2.Size = new System.Drawing.Size(143, 84);
-            this.metroTile2.TabIndex = 7;
-            this.metroTile2.Text = "Sipariş Özeti";
-            this.metroTile2.UseCustomBackColor = true;
-            this.metroTile2.UseCustomForeColor = true;
-            this.metroTile2.UseSelectable = true;
-            // 
-            // metroTile3
-            // 
-            this.metroTile3.ActiveControl = null;
-            this.metroTile3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.metroTile3.Location = new System.Drawing.Point(634, 284);
-            this.metroTile3.Name = "metroTile3";
-            this.metroTile3.Size = new System.Drawing.Size(143, 84);
-            this.metroTile3.TabIndex = 8;
-            this.metroTile3.Text = "Sipariş İptal";
-            this.metroTile3.UseCustomBackColor = true;
-            this.metroTile3.UseCustomForeColor = true;
-            this.metroTile3.UseSelectable = true;
             // 
             // metroLabel5
             // 
@@ -181,9 +142,9 @@
             this.metroLabel5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.metroLabel5.Location = new System.Drawing.Point(526, 173);
             this.metroLabel5.Name = "metroLabel5";
-            this.metroLabel5.Size = new System.Drawing.Size(209, 19);
+            this.metroLabel5.Size = new System.Drawing.Size(162, 19);
             this.metroLabel5.TabIndex = 9;
-            this.metroLabel5.Text = "Toplam Ödemeniz Gereken Tutar: ";
+            this.metroLabel5.Text = "Ödemeniz Gereken Tutar: ";
             this.metroLabel5.UseCustomBackColor = true;
             this.metroLabel5.UseCustomForeColor = true;
             // 
@@ -205,17 +166,62 @@
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
             // 
+            // metroTile3
+            // 
+            this.metroTile3.ActiveControl = null;
+            this.metroTile3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(156)))), ((int)(((byte)(18)))));
+            this.metroTile3.Location = new System.Drawing.Point(675, 261);
+            this.metroTile3.Name = "metroTile3";
+            this.metroTile3.Size = new System.Drawing.Size(140, 175);
+            this.metroTile3.TabIndex = 14;
+            this.metroTile3.Text = "Sipariş Özeti";
+            this.metroTile3.TileImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.metroTile3.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile3.UseCustomBackColor = true;
+            this.metroTile3.UseSelectable = true;
+            this.metroTile3.UseTileImage = true;
+            // 
+            // metroTile2
+            // 
+            this.metroTile2.ActiveControl = null;
+            this.metroTile2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(76)))), ((int)(((byte)(60)))));
+            this.metroTile2.Location = new System.Drawing.Point(526, 199);
+            this.metroTile2.Name = "metroTile2";
+            this.metroTile2.Size = new System.Drawing.Size(289, 60);
+            this.metroTile2.TabIndex = 13;
+            this.metroTile2.Text = "Sipariş İptal";
+            this.metroTile2.TileImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.metroTile2.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.metroTile2.UseCustomBackColor = true;
+            this.metroTile2.UseSelectable = true;
+            this.metroTile2.UseTileImage = true;
+            // 
+            // btnSiparisAl
+            // 
+            this.btnSiparisAl.ActiveControl = null;
+            this.btnSiparisAl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
+            this.btnSiparisAl.Location = new System.Drawing.Point(526, 261);
+            this.btnSiparisAl.Name = "btnSiparisAl";
+            this.btnSiparisAl.Size = new System.Drawing.Size(140, 175);
+            this.btnSiparisAl.TabIndex = 12;
+            this.btnSiparisAl.Text = "Sipariş Al";
+            this.btnSiparisAl.TileImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.btnSiparisAl.TileTextFontSize = MetroFramework.MetroTileTextSize.Tall;
+            this.btnSiparisAl.UseCustomBackColor = true;
+            this.btnSiparisAl.UseSelectable = true;
+            this.btnSiparisAl.UseTileImage = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 443);
+            this.ClientSize = new System.Drawing.Size(850, 450);
+            this.Controls.Add(this.metroTile3);
+            this.Controls.Add(this.metroTile2);
+            this.Controls.Add(this.btnSiparisAl);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.metroLabel5);
-            this.Controls.Add(this.metroTile3);
-            this.Controls.Add(this.metroTile2);
-            this.Controls.Add(this.metroTile1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.pictureBox1);
@@ -249,11 +255,11 @@
         private System.Windows.Forms.TextBox textBox2;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private MetroFramework.Controls.MetroTile metroTile1;
-        private MetroFramework.Controls.MetroTile metroTile2;
-        private MetroFramework.Controls.MetroTile metroTile3;
         private MetroFramework.Controls.MetroLabel metroLabel5;
         private MetroFramework.Controls.MetroLabel metroLabel6;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private MetroFramework.Controls.MetroTile metroTile3;
+        private MetroFramework.Controls.MetroTile metroTile2;
+        private MetroFramework.Controls.MetroTile btnSiparisAl;
     }
 }
