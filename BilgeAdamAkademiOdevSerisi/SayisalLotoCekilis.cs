@@ -23,46 +23,63 @@ namespace BilgeAdamAkademiOdevSerisi
     public partial class SayisalLotoCekilis : MetroForm
     {
         Random rnd = new Random();
+
+        int toplam = 0;
+        int textboxNumber = 0;
+        Control[] controls;
         public SayisalLotoCekilis()
         {
             InitializeComponent();
         }
 
-
+        //int sayi = 0;
+        //int dongu = 0;
+        List<int> liste = new List<int>();
+        int sayi = 0;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
-            txt1.Text = rnd.Next(1,49).ToString();
-
-            List<int> liste = new List<int>();
-
-            for (int i = 0; i < 6;)
+            Control txt = controls[textboxNumber];
+            if(textboxNumber < 6)
             {
-                int rastgeleSayi = rnd.Next(1, 49);
-                if (!liste.Contains(rastgeleSayi))
+                if (toplam < 11)
                 {
-                    //liste.Add(rastgeleSayi);
-                    liste.Insert(i, rastgeleSayi);
-                    i++;
-
+                    sayi = rnd.Next(1, 49);
+                    txt.Text = sayi.ToString();
+                    toplam += 1;
+                    
+                    
                 }
-            }
-            txt1.Text = liste[0].ToString();
-            txt2.Text = liste[1].ToString();
-            txt3.Text = liste[2].ToString();
-            txt4.Text = liste[3].ToString();
-            txt5.Text = liste[4].ToString();
-            txt6.Text = liste[5].ToString();
-            timer1.Stop();
+                else if (toplam == 11)
+                {
+                    if (!liste.Contains(sayi))
+                    {
+                        liste.Add(sayi);
+                    }
+                }
+                else
+                {
+                    textboxNumber += 1;
+                    toplam = 0;
+                    if (textboxNumber == 6)
+                    {
+                        timer1.Stop();
+
+                    }
+                }
+            } 
         }
 
         private void SayisalLotoCekilis_Load(object sender, EventArgs e)
         {
-            
+            controls = new Control[]
+            {
+                txt1, txt2, txt3, txt4, txt5, txt6
+            };
         }
 
         private void metroTile1_Click(object sender, EventArgs e)
         {
+  
             timer1.Start();
 
             

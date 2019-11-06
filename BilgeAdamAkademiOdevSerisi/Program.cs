@@ -16,7 +16,7 @@ namespace BilgeAdamAkademiOdevSerisi
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SayisalLotoCekilis());
+            Application.Run(new Form2());
         }
     }
 }
